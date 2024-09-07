@@ -1,0 +1,48 @@
+﻿body {
+    direction:rtl;
+}
+.axha {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+    .axha > .childaxha {
+        flex-basis: 22%;
+        border: 2px solid whitesmoke;
+        margin-top: 16px;
+        margin-right: 14px;
+        display: flex;
+        flex-direction:column;
+        position: relative;
+    }
+
+        .axha > .childaxha > img {
+            width: 325px;
+            height: 175px;
+        }
+
+.pkababs {
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    padding: 35px;
+    opacity: 0;
+}
+
+.childaxha:hover .pkababs {
+    opacity: 100;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.card.card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: center;
+}

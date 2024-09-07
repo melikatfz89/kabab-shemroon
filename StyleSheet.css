@@ -1,0 +1,276 @@
+﻿body {
+    direction:rtl;
+    background-color:whitesmoke;
+    scroll-behavior:smooth;
+    /* border:2px dotted whitesmoke; */
+
+}
+@font-face {
+    font-family: "pelak";
+    src: url("font/PelakFA-Medium.woff");
+}
+h1, h2, h3,h4, p, span, li, a, button, u, table, div, input{
+    font-family: "pelak";
+}
+.headerimg {
+     background-image: url('shemroon/29df759eddc142638f69936b6d9939a1.jpg');
+     background-repeat:repeat-x;
+     height:auto;
+     display:flex;
+     flex-direction:row;
+     justify-content:space-around;
+     flex-wrap:wrap;
+     padding-bottom:20px;
+}
+.logoshemroon{
+    flex-basis:18%;
+    width:100px;
+    height:auto;
+    padding:10px 30px 0 0;
+}
+.z {
+    flex-basis: 20%;
+}
+.menushemroon {
+    flex-basis: 35%;
+}
+    .menushemroon ul {
+        padding-top:40px;
+        padding-right:100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .menushemroon li {
+        list-style: none;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+    }
+.amenu {
+    color: white;
+    text-decoration: none !important;
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+    .amenu:hover{
+        color:#ffd800;
+    }
+.voroodbutton {
+    border: 1px solid red;
+    background-color: transparent;
+    border: 1px solid #ffd800;
+    color: white;
+    height: 50px;
+    margin: 30px 15px 0 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    flex-basis: 12%;
+}
+.voroodbutton:hover {
+    background-color: #ffd800;
+    color: black;
+}
+.aslitarin{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:wrap;
+   
+}
+.foods {
+    height:auto;
+    flex-basis: 61%;
+    background-color:white;
+    margin-bottom:100px;
+    padding-bottom:60px;
+    position:relative;
+
+}
+.imgkabab {
+    background-image: url('shemroon/vfvb.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 280px;
+}
+.sayeimg {
+    width: 99vw;
+    height: 280px;
+    padding: 40px 55px 0 0;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+.imgkabab > .sayeimg>  h2 {
+    color: white;
+    text-align: right;
+}
+.imgkabab .sayeimg> p {
+    color: white;
+    text-align: right;
+}
+.imgkabab > .sayeimg>  .makanbutton {
+    color: black;
+    float: right;
+    background-color: white;
+    width:150px;
+}
+.ulsefaresh {
+    flex-wrap: nowrap;
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+    left: 473px;
+    border-bottom:none;
+    padding-right:0;
+}
+.lisefaresh{
+
+}
+.asefaresh {
+    color: black;
+    width:170px;
+}
+
+.cart {
+    background-color: white;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    height: 380px;
+    flex-basis: 26%;
+    text-align: justify;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    margin-right: 50px;
+    
+}
+.iconskabab {
+    height: 180px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    position: sticky;
+    top: 0;
+    z-index:999;
+    justify-content:center;
+}
+    .iconskabab > .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: center;
+        height: auto;
+        border-bottom: 2px solid whitesmoke;
+        position: sticky;
+        top: 0;
+        flex-wrap: wrap;
+        padding:10px;
+    }
+.divicons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 12%;
+}
+    .divicons a{
+        color:#090909;
+        text-decoration:none!important;
+    }
+    .iconskabab > .icons > .divicons > img {
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+    }
+.fatherinput {
+    border-bottom: 2px solid whitesmoke;
+}
+.divinput {
+    border: 1px solid gray;
+    border-radius: 7px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width: 250px;
+    height:40px;
+    margin:10px 10px 10px 0;
+    position:relative;
+}
+.divinput> input{
+    outline:none !important;
+    border:none !important;
+}
+.axha{
+    display:flex;
+    flex-direction:row;
+    justify-content:start;
+    margin-top:0;
+    flex-wrap:wrap;
+
+}
+.axha > .childaxha {
+    flex-basis: 22%;
+    border: 2px solid whitesmoke;
+    margin-bottom:12px;
+    margin-right:14px;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+}
+.axha > .childaxha> img {
+    width:275px;
+    height:175px;
+}
+.pkababs {
+    position: absolute;
+    top: 10px;
+    text-align:center;
+    background-color:whitesmoke;
+    box-sizing:border-box;
+    padding:35px;
+    opacity:0;
+}
+.childaxha:hover .pkababs {
+    opacity: 100;
+    transition:.3s ease-in-out;
+    cursor:pointer;
+}
+.card-body {
+
+}
+.footerasli {
+    background-image: url('shemroon/29df759eddc142638f69936b6d9939a1.jpg');
+    background-repeat: repeat-x;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.backfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.imgbottomfooter {
+    background-color: #101010;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    margin:1px 5px 40px 5px;
+}
+.ashomareh{
+    color:black;
+    border-bottom:1px dotted gray;
+    margin-left:18px;
+}

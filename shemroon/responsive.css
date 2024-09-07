@@ -1,0 +1,243 @@
+﻿body {
+}
+@media screen and (min-width:100px) and (max-width:573px) {
+    .iconskabab > .icons > .divicons {
+        flex-basis: 40% !important;
+    }
+    .aslitarin {
+        margin-right: 0px;
+    }
+    .ulsefaresh{
+        left:0;
+    }
+
+    .axha > .childaxha {
+        flex-basis: 85%;
+        margin-right: 20px;
+        margin-left: 16px;
+    }
+
+    .fatherinput {
+        display: none;
+    }
+
+    .col-8 {
+        max-width: 95.666667%;
+    }
+
+        .axha > .childaxha > img {
+            width: 323px;
+            height: 170px;
+        }
+    .cart {
+        flex-basis: 91%;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        margin-right: 2px;
+    }
+    .card.card-body{
+        flex-direction:column;
+    }
+    .logoshemroon{
+        flex-basis:15%;
+        width:170px;
+        height:66px;
+    }
+    .z {
+        flex-basis: 85%;
+    }
+    .menushemroon {
+        flex-basis: 99%;
+    }
+        .menushemroon ul {
+            padding-top: 13px;
+            padding-right: 35px;
+        }
+    .voroodbutton {
+        flex-basis: 99%;
+        margin: 30px 20px 19px 10px;
+    }
+    .flesh1 {
+        display: none !important;
+    }
+    .flesh2 {
+        display: none !important;
+    }
+        .khasdokmeh {
+        margin-right: 0px;
+    }
+    .khasdokmeh2 {
+        margin-right: 10px;
+    }
+
+}
+@media screen and (min-width:574px) and (max-width:767px){
+    .ulsefaresh {
+        left: 81px;
+    }
+    .axha > .childaxha > img {
+        width: 338px;
+        height: 183px;
+    }
+    .axha > .childaxha {
+        flex-basis: 42%;
+    }
+    .axha {
+        justify-content: center;
+    }
+    .card.card-body {
+        flex-direction: column;
+    }
+    .flesh1 {
+        display: none !important;
+    }
+
+    .flesh2 {
+        display: none !important;
+    }
+    .logoshemroon {
+        flex-basis: 16%;
+        width: 70px;
+        height: 50px;
+        margin: 25px 0 0 0;
+    }
+
+    .z {
+        flex-basis: 0%;
+    }
+
+    .menushemroon {
+        flex-basis: 83%;
+    }
+
+    .voroodbutton {
+        flex-basis: 85%;
+        margin-bottom:12px;
+    }
+    .cart {
+        margin-right:10px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:800px) {
+    .ulsefaresh {
+        left: 146px;
+    }
+    .axha > .childaxha {
+        flex-basis: 40%;
+    }
+        .axha > .childaxha > img {
+            width: 330px;
+            height: 187px;
+        }
+    .axha {
+        justify-content: center;
+    }
+    .card.card-body {
+        flex-direction: column;
+    }
+    .logoshemroon {
+        flex-basis: 16%;
+        width: 70px;
+        height: 50px;
+        margin: 25px 0 0 0;
+    }
+
+    .z {
+        flex-basis: 0%;
+    }
+
+    .menushemroon {
+        flex-basis: 83%;
+    }
+
+    .voroodbutton {
+        flex-basis: 85%;
+        margin-bottom: 12px;
+    }
+    .cart {
+        margin-right: 10px;
+    }
+}
+@media screen and (min-width:800px) and (max-width:991px) {
+    .ulsefaresh {
+        left: 174px;
+    }
+
+    .axha > .childaxha {
+        flex-basis: 40%;
+    }
+        .axha > .childaxha > img {
+            width: 330px;
+            height: 187px;
+        }
+    .axha {
+        justify-content: center;
+    }
+    .card.card-body {
+        flex-direction: column;
+    }
+
+    .logoshemroon {
+        flex-basis: 22%;
+        width: 98px;
+        height: 64px;
+        margin: 25px 0 0 0;
+    }
+
+    .z {
+        flex-basis: 0%;
+    }
+
+    .menushemroon {
+        flex-basis: 61%;
+    }
+
+    .voroodbutton {
+        flex-basis: 12%;
+        margin-bottom: 12px;
+    }
+    .cart {
+        margin-right: 10px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .ulsefaresh {
+        left: 238px;
+    }
+    .logoshemroon {
+        flex-basis: 15%;
+    }
+    .z {
+        flex-basis: 15%;
+    }
+
+    .menushemroon {
+        flex-basis: 47%;
+    }
+    .voroodbutton {
+        flex-basis: 12%;
+    }
+    .cart {
+        margin-right: 10px;
+    }
+    .ghazaha {
+        flex-basis: 57%;
+    }
+    .flesh2{
+    flex-basis:45% !important;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1300px) {
+    .axha {
+       justify-content:center;
+    }
+    .ulsefaresh {
+        left: 366px;
+    }
+    .menushemroon {
+        flex-basis: 47%;
+    }
+}
+@media screen and (min-width:1301px){
+
+}

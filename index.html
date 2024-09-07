@@ -1,0 +1,380 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="BootStarp/Content/bootstrap.css" rel="stylesheet" />
+    <script src="BootStarp/JS/jquery-3.7.1.min.js"></script>
+    <script src="BootStarp/JS/popper.min.js"></script>
+    <script src="BootStarp/JS/bootstrap.min.js"></script>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link href="shemroon/responsive.css" rel="stylesheet" />
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+    <style>
+        .khasdokmeh {
+            position: relative;
+        }
+    </style>
+    <script>
+        function createtable1() {
+            document.getElementById("barbecue").style.display = "block";
+            document.getElementById("multiCollapseExample2").style.display = "none";
+        }
+        function createtable2() {
+            document.getElementById("multiCollapseExample2").style.display = "block";
+            document.getElementById("barbecue").style.display = "none";
+        }
+    </script>
+    <script>
+        var product = [
+            { "image": "shemroon/New folder/yvcdgna0.5qy_560x350.jpg", "tozih": "یک سیخ جوجه بدون استخوان فیله ذغالی(500 گرم)،گوجه فرنگی،فلفل کبابی،ریحان تازه،سس انار،پیاز قرمز ", "title": "کباب لقمه گوسفندی نیاوران", "gheimat": 600000, }
+            , { "image": "shemroon/New folder/sd55ldhy.1s4_560x350.jpg", "tozih": "یک سیخ جوجه بدون استخوان فیله ذغالی(500 گرم)،گوجه فرنگی،فلفل کبابی، ", "title": "کباب لقمه گوسفندی شمرون", "gheimat": 300000, }
+            , { "image": "shemroon/New folder/qngvzjdr.o0w_560x350.jpg", "tozih": "یک سیخ جوجه بدون استخوان فیله ذغالی(500 گرم)،گوجه فرنگی،فلفل کبابی،ریحان تازه،سس انار،پیاز قرمز ", "title": "کباب لقمه گوسفندی نیاوران", "gheimat": 600000, }
+            , { "image": "shemroon/New folder/k5wqyfbo.xgt_560x350.jpg", "tozih": "یک سیخ جوجه بدون استخوان فیله ذغالی(500 گرم)،گوجه فرنگی،فلفل کبابی، ", "title": "کباب لقمه گوسفندی شمرون", "gheimat": 300000, }
+            , { "image": "shemroon/New folder/z3f23npc.lay_560x350.jpg", "tozih": "یک سیخ جوجه بدون استخوان فیله ذغالی(500 گرم)،گوجه فرنگی،فلفل کبابی، ", "title": "کباب لقمه گوسفندی شمرون", "gheimat": 300000, }
+            , { "image": "shemroon/New folder/k5wqyfbo.xgt_560x350.jpg", "tozih": "یک سیخ جوجه بدون استخوان فیله ذغالی(500 گرم)،گوجه فرنگی،فلفل کبابی، ", "title": "کباب لقمه گوسفندی شمرون", "gheimat": 620000, }
+            , { "image": "shemroon/New folder/iwgqeqjh.a4g_560x350.jpg", "tozih": "یک سیخ جوجه بدون استخوان فیله ذغالی(500 گرم)،گوجه فرنگی،فلفل کبابی، ", "title": "کباب لقمه گوسفندی شمرون", "gheimat": 300000, }
+            , { "image": "shemroon/New folder/qngvzjdr.o0w_560x350.jpg", "tozih": "یک سیخ جوجه بدون استخوان فیله ذغالی(500 گرم)،گوجه فرنگی،فلفل کبابی، ", "title": "کباب لقمه گوسفندی شمرون", "gheimat": 450000, }
+            , { "image": "shemroon/New folder/oe2ohaoz.ljb_560x350.jpg", "tozih": "یک سیخ جوجه بدون استخوان فیله ذغالی(500 گرم)،گوجه فرنگی،فلفل کبابی، ", "title": "کباب لقمه گوسفندی شمرون", "gheimat": 620000, }
+            , { "image": "shemroon/New folder/iwgqeqjh.a4g_560x350.jpg", "tozih": "یک سیخ جوجه بدون استخوان فیله ذغالی(500 گرم)،گوجه فرنگی،فلفل کبابی، ", "title": "کباب لقمه گوسفندی شمرون", "gheimat": 300000, }
+            , { "image": "shemroon/New folder/yvcdgna0.5qy_560x350.jpg", "tozih": "یک سیخ جوجه بدون استخوان فیله ذغالی(500 گرم)،گوجه فرنگی،فلفل کبابی، ", "title": "کباب لقمه گوسفندی شمرون", "gheimat": 450000, }
+            , { "image": "shemroon/New folder/oe2ohaoz.ljb_560x350.jpg", "tozih": "یک سیخ جوجه بدون استخوان فیله ذغالی(500 گرم)،گوجه فرنگی،فلفل کبابی، ", "title": "کباب لقمه گوسفندی شمرون", "gheimat": 620000, }
+            , { "image": "shemroon/New folder/iwgqeqjh.a4g_560x350.jpg", "tozih": "یک سیخ جوجه بدون استخوان فیله ذغالی(500 گرم)،گوجه فرنگی،فلفل کبابی، ", "title": "کباب لقمه گوسفندی شمرون", "gheimat": 300000, }
+            , { "image": "shemroon/New folder/yvcdgna0.5qy_560x350.jpg", "tozih": "یک سیخ جوجه بدون استخوان فیله ذغالی(500 گرم)،گوجه فرنگی،فلفل کبابی، ", "title": "کباب لقمه گوسفندی شمرون", "gheimat": 450000, }
+            , { "image": "shemroon/New folder/oe2ohaoz.ljb_560x350.jpg", "tozih": "یک سیخ جوجه بدون استخوان فیله ذغالی(500 گرم)،گوجه فرنگی،فلفل کبابی، ", "title": "کباب لقمه گوسفندی شمرون", "gheimat": 620000, }
+            , { "image": "shemroon/New folder/iwgqeqjh.a4g_560x350.jpg", "tozih": "یک سیخ جوجه بدون استخوان فیله ذغالی(500 گرم)،گوجه فرنگی،فلفل کبابی، ", "title": "کباب لقمه گوسفندی شمرون", "gheimat": 300000, }
+        ];
+        var str = `<div class="axha" id="imgsbarbecue">
+                 <div class="childaxha" data-toggle="modal" data-target="#exampleModalchildax">
+                                <img src="shemroon/New folder/z3f23npc.lay_560x350.jpg" />
+                                <p class="pkababs">دوسیخ کباب لقمه گوسفندی ذغالی(هر سیخ 250 گرم)،گوجه فرنگی،فلفل کبابی،ریحان تازه،ترشی انبه،پیاز قرمز</p>
+                                <h6 class="text-justify p-2">کباب لقمه گوسفندی شمرون</h6>
+                                <div style="display:flex;justify-content:space-between;" class="p-2">
+                                    <span>450000تومان</span>
+                                    <button class="btn btn-warning p-2"><i class="fa fa-plus-square-o" style="font-size:20px;" aria-hidden="true"></i></button>
+                                </div>
+                                </div>`;
+        for (var i = 0; i < product.length; i++) {
+            str = str + `<div class="childaxha" data-toggle="modal" data-target="#exampleModalchildax">
+                    <img src="${product[i].image}"/>
+                    <p class="pkababs">${product[i].tozih}</p>
+                    <h6 class="text-justify p-2">${product[i].title}</h6>
+                    <div style="display:flex;justify-content:space-between;" class="p-2">
+                        <span>${product[i].gheimat}</span>
+                        <button class="btn btn-warning p-2"><i class="fa fa-plus-square-o" style="font-size:20px;" aria-hidden="true"></i></button>
+                    </div>
+                     </div>`;
+        }
+        str = str + `</div>`;
+    </script>
+    <script>
+        var mahsool = [{ "imagex": "shemroon/New folder (3)/tqcy4axf.ptt_560x350.jpg", "titlex": " زیتون", "gheimatx": 750000, }
+            , { "imagex": "shemroon/New folder (3)/cqxjkwzj.4dp_560x350.jpg", "titlex": "ماست معمولی", "gheimatx": 30000, }
+            , { "imagex": "shemroon/New folder (3)/ra50it1o.ftt_560x350.jpg", "titlex": "ماست معمولی", "gheimatx": 620000, }
+            , { "imagex": "shemroon/New folder (3)/cqxjkwzj.4dp_560x350.jpg", "titlex": "ماست موسیر", "gheimatx": 30000, }
+        ]
+        var stx = `<div class="axha" id="imgsbarbecue2">
+                 <div class="childaxha">
+                                <img src="shemroon/New folder (3)/ra50it1o.ftt_560x350.jpg" />
+                                <h6 class="text-justify p-2">بورانی بادمجان</h6>
+                                <div style="display:flex;justify-content:space-between;" class="p-2">
+                                    <span>45000تومان</span>
+                                    <button class="btn btn-warning p-2"><i class="fa fa-plus-square-o" style="font-size:20px;" aria-hidden="true"></i></button>
+                                </div>
+                            </div>`;
+        for (var i = 0; i < mahsool.length; i++) {
+            stx = stx + `<div class="childaxha">
+                    <img src="${mahsool[i].imagex}"/>
+                    <h6 class="text-justify p-2">${mahsool[i].titlex}</h6>
+                    <div style="display:flex;justify-content:space-between;" class="p-2">
+                        <span>${mahsool[i].gheimatx}</span>
+                        <button class="btn btn-warning p-2"><i class="fa fa-plus-square-o" style="font-size:20px;" aria-hidden="true"></i></button>
+                    </div>
+                     </div>`;
+        }
+        stx = stx + `</div>`;
+    </script>
+    <script>
+        var productz = [
+            { "imagez": "shemroon/New folder (3)/vswgwh44.lhj_560x350.jpg", "titlez": "دوغ محلی", "gheimaz": 75000, }
+            , { "imagez": "shemroon/New folder (3)/lkpx3ymg.mhx_560x350.jpg", "titlez": "آب معدنی", "gheimaz": 3000, }
+            , { "imagez": "shemroon/New folder (3)/bphhsbq5.bum_560x350.jpg", "titlez": "ما الشعیر ", "gheimaz": 62000, }
+        ];
+        var stz = `<div class="axha" id="imgsbarbecue3">
+                 <div class="childaxha">
+                <img src="shemroon/New folder (3)/bphhsbq5.bum_560x350.jpg"/>
+                <h6 class="text-justify p-2">نوشابه قوطی کوکا</h6>
+                <div style="display:flex;justify-content:space-between;" class="p-2">
+                    <span>10000تومان</span>
+                    <button class="btn btn-warning p-2"><i class="fa fa-plus-square-o" style="font-size:20px;" aria-hidden="true"></i></button>
+                </div>
+            </div>`;
+        for (var i = 0; i < productz.length; i++) {
+            stz = stz + `<div class="childaxha">
+                    <img src="${productz[i].imagez}"/>
+                    <h6 class="text-justify p-2">${productz[i].titlez}</h6>
+                    <div style="display:flex;justify-content:space-between;" class="p-2">
+                        <span>${productz[i].gheimaz}</span>
+                        <button class="btn btn-warning p-2"><i class="fa fa-plus-square-o" style="font-size:20px;" aria-hidden="true"></i></button>
+                    </div>
+                     </div>`;
+        }
+        stz = stz + `</div>`;
+    </script>
+</head>
+<body >
+    <div class="modal fade" id="exampleModalchildax" tabindex="-1" role="dialog" aria-labelledby="exampleModalchildaxTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="shemroon/New folder/iwgqeqjh.a4g_560x350.jpg" class="modal-title img-fluid" id="exampleModalchildaxTitle"style=width:470px;height:auto;/>
+                    <button type="button" class="close bg-light" data-dismiss="modal" aria-label="Close" style="z-index:999;margin-right:-40px;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-justify">
+                    <h6>کباب شمرون</h6>
+                    <span>320000تومان</span>
+                    <p>یک سیخ جوجه بدون استخوان ران ذغالی(500 گرم)،نان تازه داغ،گوجه فرنگی،فلفل کبابی،ریحان تازه،سس انار،پیاز قرمز</p>
+                </div>
+                <div class="modal-footer" style="display:flex;flex-direction:row;justify-content:space-between;">
+                    <button type="button" class="btn btn-warning text-light">افزودن به سبد خرید</button>
+                    <button type="button" class="btn btn-warning">+</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="headerimg">
+            <img class="logoshemroon" src="shemroon/79320124d662824a23d39e22cb52061c.png" />
+            <div class="z"></div>
+            <nav class="menushemroon">
+                <ul>
+                    <li>
+                        <a href="#" class="amenu">صفحه اصلی</a>
+                    </li>
+                    <li>
+                        <a href="#" class="amenu"> سفارش اینترنتی</a>
+                    </li>
+                    <li>
+                        <a href="#" class="amenu">درباره </a>
+                    </li>
+                    <li>
+                        <a href="#" class="amenu">تماس با ما </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="voroodbutton" data-toggle="modal" data-target="#exampleModal">
+                <i class="fa fa-user-o" aria-hidden="true"></i> ورود/عضویت
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-center" style="padding-top:50px;padding-bottom:50px;">
+                            <p>لطفا شماره موبایل خود را وارد کنید.</p><hr />
+                            <input placeholder="شماره موبایل(09xxxxxx)" type="number" style="border:none;" />
+                        </div>
+                        <div class="modal-footer text-center justify-content-center">
+                            <button type="button" class="btn btn-warning" style="padding:15px 55px 15px 55px;">ادامه ></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="imgkabab">
+                <div class="sayeimg">
+                    <h2>تجریش</h2>
+                    <p>آدرس: میدان تجریش، ضلع شمال شرقی</p>
+                    <button class="btn btn-light makanbutton" data-toggle="modal" data-target="#exampleModal2">تغییر مجموعه <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                    <div class="modal fade text-center justify-content-center" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h6 class="modal-title pl-5" id="exampleModalLabel2">لطفا مجموعه مورد نظر خود را انتخاب کنید</h6>
+                                </div>
+                                <div class="modal-body" style="padding-bottom:100px;">
+                                    <span style="padding: 30px;">تجریش<i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                    <span style="padding: 30px;">نیاوران<i class="fa fa-map-marker" aria-hidden="true"></i></span><br /><br /><br />
+                                    <span style="padding: 50px;">دشت بهشت<i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display:flex;flex-direction:row;">
+                        <span class="rounded-circle" style="background-color: forestgreen; width: 25px; height: 25px; margin: 50px 0 0 8px;"></span>
+                        <p style="font-size:13px;color:white;margin-top:50px;font-weight:bold;">سفارش می پذیرم</p>
+                    </div>
+                </div>
+            </div>
+        </div><br />
+        <ul class="ulsefaresh nav nav-justified nav-tabs">
+            <li class="lisefaresh nav-item">
+                <a href="#" class="asefaresh nav-link active" onclick="createtable1()">
+                    منوی سفارش
+                </a>
+            </li>
+            <li class="lisefaresh nav-item">
+                <a class="asefaresh nav-link" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2" onclick="createtable2()">
+                    اطلاعات سفارش
+                </a>
+            </li>
+        </ul>
+        <div class="aslitarin">
+            <div class="foods">
+                <div class="khasdokmeh" id="barbecue"  data-spy="scroll" data-target=".iconskabab" data-offset="50">
+                    <div class="iconskabab">
+                        <div class="icons navbar-nav">
+                            <div class="flesh1" style="display:flex; flex-direction: row; flex-basis: 5%;">
+                                <i class="fa fa-chevron-right pt-3 pr-2" aria-hidden="true" style="font-size: 28px;color:gray;"></i>
+                            </div>
+                              <div class="divicons">
+                                  <img src="shemroon/New folder (2)/icon-kebab.png" />
+                                  <a class="nav-link" href="#dvcontent"><h6 id="icontext1">کباب</h6> </a>  
+                              </div>
+                              <div class="divicons">
+                                  <img src="shemroon/New folder (2)/icon-salad.png" />
+                                  <a class="nav-link" href="#dvcontentx"><h6 id="icontext1">پیش غذا</h6> </a>
+                              </div>
+                              <div class="divicons">
+                                  <img src="shemroon/New folder (2)/icon-beverage.png" />
+                                  <a class="nav-link" href="#dvcontentz"><h6 id="icontext1">نوشیدنی</h6> </a>
+                              </div>
+                              <div class="divicons">
+                                  <img src="shemroon/New folder (2)/icon-default.png" />
+                                  <a class="nav-link" href="#dvcontent"><h6 id="icontext1">غذای ایرانی</h6> </a>
+                              </div>
+                            <div class="flesh2" style="display: flex; flex-direction: row; flex-basis: 43%; justify-content: flex-end; ">
+                                <i class="fa fa-chevron-left pt-3 pl-2" aria-hidden="true" style="font-size: 28px;color:gray;"></i>
+                            </div>
+                        </div>
+                        <div class="fatherinput" style="">
+                            <div class="divinput">
+                                <i class="fa fa-search pt-2 pl-2" aria-hidden="true" style="font-size:18px;color:gray;"></i>
+                                <input type="text" placeholder="جستجوی سریع" />
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="text-right p-4 text-secondary" id="section1">کباب <i class="fa fa-share-alt" aria-hidden="true" style="font-size: 15px; border:1px solid gray;padding:6px;border-radius:50px;"></i></h5>
+                    <div id="dvcontent">
+                    </div>
+                    <script>
+                        document.getElementById("dvcontent").innerHTML = str;
+                    </script>
+                    <h5 class="text-right p-4 text-secondary" id="section2">پیش غذا <i class="fa fa-share-alt" aria-hidden="true" style="font-size: 15px; border:1px solid gray;padding:6px;border-radius:50px;"></i></h5>
+                    <div id="dvcontentx">
+                    </div>
+                    <script>
+                        document.getElementById("dvcontentx").innerHTML = stx;
+                    </script>
+                    <h5 class="text-right p-4 text-secondary" id="section3">نوشیدنی <i class="fa fa-share-alt" aria-hidden="true" style="font-size: 15px; border:1px solid gray;padding:6px;border-radius:50px;"></i></h5>
+                        <div id="dvcontentz">
+                        </div>
+                        <script>
+                            document.getElementById("dvcontentz").innerHTML = stz;
+                        </script>
+                </div>
+                <div class="khasdokmeh2 collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                        <div class="col-5 iranijagar">
+                            <p style="color: rgb(243, 179, 26); font-weight: bold; ">سرویس دهی آنلاین</p>
+                            <table class="table text-center">
+                                <tr class="text-center justify-content-center">
+                                    <td></td>
+                                    <td>صبحانه</td>
+                                    <td> نهار</td>
+                                    <td>شام</td>
+                                </tr>
+                                <tr>
+                                    <td>شنبه</td>
+                                    <td> -</td>
+                                    <td>11:00 تا 19:00</td>
+                                    <td>
+                                        19:00 تا 23:45
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>شنبه</td>
+                                    <td> -</td>
+                                    <td>11:00 تا 19:00</td>
+                                    <td>
+                                        19:00 تا 23:45
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>یکشنبه</td>
+                                    <td> -</td>
+                                    <td>11:00 تا 19:00</td>
+                                    <td>
+                                        19:00 تا 23:45
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>دوشنبه</td>
+                                    <td> -</td>
+                                    <td>11:00 تا 19:00</td>
+                                    <td>
+                                        19:00 تا 23:45
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>سه شنبه</td>
+                                    <td> -</td>
+                                    <td>11:00 تا 19:00</td>
+                                    <td>
+                                        19:00 تا 23:45
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-5">
+                            <p style="color: rgb(243, 179, 26);font-weight:bold;">نوع غذا</p>
+                            <div style="display:flex;flex-direction:row;justify-content:center;">
+                                <h6 class="ml-2 p-2" style="border: 1px solid gray; border-radius: 20px; ">غذای ایرانی</h6>
+                                <h6 class="p-2" style="border:1px solid gray; border-radius:20px;">کبابی یا جگرکی </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 text-center justify-content-center pt-4">
+                        <h5 style="color: rgb(243, 179, 26);">آدرس رستوران</h5>
+                        <h6>میدان تجریش، ضلع شمال شرقی</h6>
+                        <span>تلفن: <a href="#" class="ashomareh">1775</a> <a href="#" class="ashomareh">22746008</a> <a href="#" class="ashomareh">22746007</a> </span>
+                    </div>
+                    <div class="m-4" style="height:300px;border:1px solid black;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="cart">
+                <h6 class="p-2">سبد خرید</h6><hr />
+                <img class="img-fluid" src="shemroon/New folder (3)/Capture.JPG" />
+            </div><br /><br /><br /><br />
+        </div>
+        <footer class="footerasli">
+            <div class="backfooter">
+                <div>
+                    <p style="color:white;font-size:16px;padding:20px;">© حقوق مادی و معنوی متعلق به <span style="color:#ffd800">شمرون کباب</span> است</p>
+                </div>
+                <div>
+                    <i style="font-size:30px;" class="fa fa-instagram text-warning p-4" aria-hidden="true"></i>
+                    <i style="font-size:30px;" class="fa fa-facebook text-warning pt-4 pl-4" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div>
+                <p style="color:white;font-size:16px;padding:10px;text-align:center;">طراحی و پیاده سازی توسط<span style="color:red;">دلینو</span>دلینو</p>
+            </div>
+            <div style="display:flex;flex-direction:row;justify-content:center">
+                <img class="imgbottomfooter" src="shemroon/New folder (4)/label-app-android-bazaar.png" />
+                <img class="imgbottomfooter" src="shemroon/New folder (4)/label-app-ios-sibche.png" />
+            </div>
+        </footer>
+</body>
+</html>
